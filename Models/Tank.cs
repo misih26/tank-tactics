@@ -17,5 +17,19 @@ namespace Tank_Tactics.Models
         public double PositionLeft { get; set; }
         public Direction Direction { get; set; }
         public bool Blocked { get; set; }
+
+        public Tank(string name, double shield, double attack, double attackCooldown, double speed)
+        {
+            Name = name;
+            Shield = shield;
+            Attack = attack;
+            AttackCooldown = attackCooldown;
+            Speed = speed;
+        }
+
+        public void MoveUp() { }
+        public void MoveDown() { }
+        public void MoveLeft() { }
+        public void MoveRight() { }
     }
 }
