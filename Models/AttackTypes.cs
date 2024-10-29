@@ -8,5 +8,6 @@ namespace Tank_Tactics.Models
 {
     public enum AttackTypes
     {
+        PRIMARY, SECONDARY
     }
 }
