@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tank_Tactics.Models
 {
-    internal enum Direction
+    public enum Direction
     {
     }
 }

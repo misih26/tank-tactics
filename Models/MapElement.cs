@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tank_Tactics.Models
 {
-    internal class MapElement
+    public abstract class MapElement
     {
     }
 }
