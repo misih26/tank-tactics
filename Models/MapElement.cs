@@ -14,7 +14,7 @@ namespace Tank_Tactics.Models
         public double Width { get; }
         public double Height { get; }
 
-        protected MapElement(string image, double positionTop, double positionLeft, double width, double height)
+        public MapElement(string image, double positionTop, double positionLeft, double width, double height)
         {
             Image = image;
             PositionTop = positionTop;

@@ -16,6 +16,7 @@ namespace Tank_Tactics.Models
         {
             Name = name;
             ChosenTank = chosenTank;
+            Points = 0;
         }
     }
 }

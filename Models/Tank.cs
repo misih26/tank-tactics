@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace Tank_Tactics.Models
 {
@@ -18,13 +19,17 @@ namespace Tank_Tactics.Models
         public Direction Direction { get; set; }
         public bool Blocked { get; set; }
 
-        public Tank(string name, double shield, double attack, double attackCooldown, double speed)
+        public Tank(string name, double shield, double attack, double attackCooldown, double speed, double positionTop, double positionLeft, Direction direction)
         {
             Name = name;
             Shield = shield;
             Attack = attack;
             AttackCooldown = attackCooldown;
             Speed = speed;
+            PositionTop = positionTop;
+            PositionLeft = positionLeft;
+            Direction = direction;
+            Blocked = false;
         }
 
         public void MoveUp() { }
