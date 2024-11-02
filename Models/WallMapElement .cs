@@ -12,7 +12,10 @@ namespace Tank_Tactics.Models
             : base(image, positionTop, positionLeft, width, height)
         { }
 
-        public override void HandleTouch(Tank tank) { }
+        public override void HandleTouch(Tank tank) 
+        {
+            tank.Blocked = true;
+        }
     }
 }
 

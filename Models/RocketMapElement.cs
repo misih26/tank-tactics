@@ -16,6 +16,9 @@ namespace Tank_Tactics.Models
             SourceTank = sourceTank;
         }
 
-        public override void HandleTouch(Tank tank) { }
+        public override void HandleTouch(Tank tank) 
+        {
+            tank.Shield -= SourceTank.Attack;
+        }
     }
 }
