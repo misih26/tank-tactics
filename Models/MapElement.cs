@@ -22,7 +22,15 @@ namespace Tank_Tactics.Models
             Width = width;
             Height = height;
         }
-        public bool IsTouching(Tank tank) => false;
+        public bool IsTouching(Tank tank)
+        {
+            return false;
+        }
         public abstract void HandleTouch(Tank tank);
+
+        private bool IsSelectedCornerTouched(int[] tankCorner, int[] elementLeftTopConer, int[] elementRightBottomCorner)
+        {
+            return false;
+        }
     }
 }
