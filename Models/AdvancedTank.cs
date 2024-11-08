@@ -10,8 +10,8 @@ namespace Tank_Tactics.Models
     {
         public double SecondaryAttack { get; set; }
         public double SecondaryAttackCooldown { get; set; }
-        public AdvancedTank(string name, double shield, double attack, double attackCooldown, double speed, double secondaryAttack, double secondaryAttackCooldown, double positionTop, double positionLeft, Direction direction)
-            : base(name, shield, attack, attackCooldown, speed, positionTop, positionLeft, direction)
+        public AdvancedTank(string name, double shield, double attack, double attackCooldown, double speed, double secondaryAttack, double secondaryAttackCooldown, double positionTop, double positionLeft, Direction direction, string image)
+            : base(name, shield, attack, attackCooldown, speed, positionTop, positionLeft, direction, image)
         {
             SecondaryAttack = secondaryAttack;
             SecondaryAttackCooldown = secondaryAttackCooldown;

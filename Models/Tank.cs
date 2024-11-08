@@ -9,6 +9,8 @@ namespace Tank_Tactics.Models
 {
     public class Tank
     {
+        private const int WIDTH = 20;
+        private const int HEIGHT = 20;
         public string Name { get; set; }
         public double Shield { get; set; }
         public double Attack { get; set; }
@@ -18,8 +20,9 @@ namespace Tank_Tactics.Models
         public double PositionLeft { get; set; }
         public Direction Direction { get; set; }
         public bool Blocked { get; set; }
+        public string Image { get; }
 
-        public Tank(string name, double shield, double attack, double attackCooldown, double speed, double positionTop, double positionLeft, Direction direction)
+        public Tank(string name, double shield, double attack, double attackCooldown, double speed, double positionTop, double positionLeft, Direction direction, string image)
         {
             Name = name;
             Shield = shield;
@@ -30,6 +33,7 @@ namespace Tank_Tactics.Models
             PositionLeft = positionLeft;
             Direction = direction;
             Blocked = false;
+            Image = image;
         }
 
         public void MoveUp() 
@@ -51,6 +55,14 @@ namespace Tank_Tactics.Models
         {
             PositionLeft += Speed;
             Direction = Direction.RIGHT;
+        }
+        public int Height
+        {
+            get { return HEIGHT; }
+        }
+        public int Width
+        {
+            get { return WIDTH; }
         }
     }
 }
