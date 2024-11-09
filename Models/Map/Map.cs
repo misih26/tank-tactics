@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tank_Tactics.Models.Enums;
+using Tank_Tactics.Models.Players; 
+using Tank_Tactics.Models.Tanks; 
 
-namespace Tank_Tactics.Models
+
+
+namespace Tank_Tactics.Models.Map
 {
     public class Map
     {
@@ -23,7 +28,7 @@ namespace Tank_Tactics.Models
 
         public void MoveTank(double leftChange, double topChange, int tankIndex)
         {
-           
+
         }
 
         public void Attack(Tank attacker, Tank defender, AttackTypes attackType)

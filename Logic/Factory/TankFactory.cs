@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tank_Tactics.Models.Enums;
+using Tank_Tactics.Models.Tanks;
+using Tank_Tactics.Models.Enums;  //
 
-namespace Tank_Tactics.Models
+
+namespace Tank_Tactics.Logic.Factory
 {
     public class TankFactory
     {

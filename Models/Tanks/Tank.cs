@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
+using Tank_Tactics.Models.Enums;
 
-namespace Tank_Tactics.Models
+
+namespace Tank_Tactics.Models.Tanks
 {
     public class Tank
     {
@@ -36,22 +38,22 @@ namespace Tank_Tactics.Models
             Image = image;
         }
 
-        public void MoveUp() 
+        public void MoveUp()
         {
             PositionTop -= Speed;
             Direction = Direction.UP;
         }
-        public void MoveDown() 
+        public void MoveDown()
         {
             PositionTop += Speed;
             Direction = Direction.DOWN;
         }
-        public void MoveLeft() 
+        public void MoveLeft()
         {
             PositionLeft -= Speed;
             Direction = Direction.LEFT;
         }
-        public void MoveRight() 
+        public void MoveRight()
         {
             PositionLeft += Speed;
             Direction = Direction.RIGHT;
