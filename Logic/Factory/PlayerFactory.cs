@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tank_Tactics.Models.Tanks;
-using Tank_Tactics.Models.Player;
+using Tank_Tactics.Models.Players;
 
 namespace Tank_Tactics.Logic.Factory
 {
     public class PlayerFactory
     {
-        int PlayerIndex { get; set; }
-        string PlayerName { get; set; }
-        Tank tank { get; set; }
-        TankFactory TankFactory { get; }
+        public int PlayerIndex { get; set; }
+        public string PlayerName { get; set; }
+        public Tank tank { get; set; }
+        public TankFactory TankFactory { get; }
         public PlayerFactory(TankFactory tankFactory)
         {
             TankFactory = tankFactory;

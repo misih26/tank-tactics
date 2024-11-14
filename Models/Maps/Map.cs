@@ -9,7 +9,7 @@ using Tank_Tactics.Models.Tanks;
 
 
 
-namespace Tank_Tactics.Models.Map
+namespace Tank_Tactics.Models.Maps
 {
     public class Map
     {
