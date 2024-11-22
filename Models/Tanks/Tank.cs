@@ -11,8 +11,8 @@ namespace Tank_Tactics.Models.Tanks
 {
     public class Tank
     {
-        private const int WIDTH = 20;
-        private const int HEIGHT = 20;
+        private const int WIDTH = 80;
+        private const int HEIGHT = 80;
         public string Name { get; set; }
         public double Shield { get; set; }
         public double Attack { get; set; }

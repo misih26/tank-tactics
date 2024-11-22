@@ -16,12 +16,12 @@ namespace Tank_Tactics.Logic.Factory
             if (tankType == Tanks.Tiger)
             {
                 // Alap tank (Tank típus)
-                return new Tank("Tiger", 150, 50, 2, 10, 0, 0, Direction.UP, "");
+                return new Tank("Tiger", 150, 50, 2, 10, 0, 0, Direction.UP, "/tank.png");
             }
             else if (tankType == Tanks.Leopard)
             {
                 // Alap tank (Tank típus)
-                return new Tank("Leopard", 130, 45, 1.5, 12, 0, 0, Direction.UP, "");
+                return new Tank("Leopard", 130, 45, 1.5, 12, 0, 0, Direction.UP, "/tank.png");
             }
             else if (tankType == Tanks.Panther)
             {
