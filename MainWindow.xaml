@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Tank_Tactics"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <Canvas x:Name="Canvas" Background="White" >
+        <Image x:Name="Player1Tank" Width="{Binding Path=Player1TankWidth, Mode=OneWay}" Height="{Binding Path=Player1TankHeight, Mode=OneWay}" Canvas.Left="{Binding Path=Player1TankPositionLeft, Mode=OneWay}" Canvas.Top="{Binding Path=Player1TankPositionTop, Mode=OneWay}" Source="{Binding Path=Player1TankImage, Mode=OneWay}"></Image>
+        <Image x:Name="Player2Tank" Width="{Binding Path=Player2TankWidth, Mode=OneWay}" Height="{Binding Path=Player2TankHeight, Mode=OneWay}" Canvas.Left="{Binding Path=Player2TankPositionLeft, Mode=OneWay}" Canvas.Top="{Binding Path=Player2TankPositionTop, Mode=OneWay}" Source="{Binding Path=Player2TankImage, Mode=OneWay}"></Image>
+    </Canvas>
 </Window>
